@@ -12,6 +12,7 @@
 		28DAB1181EE7FD9B005BA387 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DAB1161EE7FD9B005BA387 /* Main.storyboard */; };
 		28DAB11A1EE7FD9B005BA387 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28DAB1191EE7FD9B005BA387 /* Assets.xcassets */; };
 		28DAB11D1EE7FD9B005BA387 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DAB11B1EE7FD9B005BA387 /* LaunchScreen.storyboard */; };
+		28DAB1251EE816C3005BA387 /* LandmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DAB1241EE816C3005BA387 /* LandmarksViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		28DAB1191EE7FD9B005BA387 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28DAB11C1EE7FD9B005BA387 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28DAB11E1EE7FD9B005BA387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28DAB1241EE816C3005BA387 /* LandmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				28DAB1121EE7FD9B005BA387 /* AppDelegate.swift */,
 				28DAB1141EE7FD9B005BA387 /* ViewController.swift */,
+				28DAB1241EE816C3005BA387 /* LandmarksViewController.swift */,
 				28DAB1161EE7FD9B005BA387 /* Main.storyboard */,
 				28DAB1191EE7FD9B005BA387 /* Assets.xcassets */,
 				28DAB11B1EE7FD9B005BA387 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				28DAB1151EE7FD9B005BA387 /* ViewController.swift in Sources */,
 				28DAB1131EE7FD9B005BA387 /* AppDelegate.swift in Sources */,
+				28DAB1251EE816C3005BA387 /* LandmarksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
