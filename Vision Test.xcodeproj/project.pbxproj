@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2892E6D71EE95B83003CB6C9 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2892E6D51EE95B53003CB6C9 /* Resnet50.mlmodel */; };
+		2892E6D91EE95BA7003CB6C9 /* CoreMLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892E6D81EE95BA7003CB6C9 /* CoreMLViewController.swift */; };
 		28DAB1131EE7FD9B005BA387 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DAB1121EE7FD9B005BA387 /* AppDelegate.swift */; };
 		28DAB1151EE7FD9B005BA387 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DAB1141EE7FD9B005BA387 /* ViewController.swift */; };
 		28DAB1181EE7FD9B005BA387 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DAB1161EE7FD9B005BA387 /* Main.storyboard */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2892E6D41EE95A99003CB6C9 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
+		2892E6D51EE95B53003CB6C9 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Resnet50.mlmodel; path = ../../../Downloads/Resnet50.mlmodel; sourceTree = "<group>"; };
+		2892E6D81EE95BA7003CB6C9 /* CoreMLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLViewController.swift; sourceTree = "<group>"; };
 		28DAB10F1EE7FD9B005BA387 /* Vision Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vision Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28DAB1121EE7FD9B005BA387 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28DAB1141EE7FD9B005BA387 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,11 +42,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2892E6D31EE95A99003CB6C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2892E6D41EE95A99003CB6C9 /* CoreML.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		28DAB1061EE7FD9B005BA387 = {
 			isa = PBXGroup;
 			children = (
 				28DAB1111EE7FD9B005BA387 /* Vision Test */,
 				28DAB1101EE7FD9B005BA387 /* Products */,
+				2892E6D31EE95A99003CB6C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +70,7 @@
 		28DAB1111EE7FD9B005BA387 /* Vision Test */ = {
 			isa = PBXGroup;
 			children = (
+				2892E6D51EE95B53003CB6C9 /* Resnet50.mlmodel */,
 				28DAB1121EE7FD9B005BA387 /* AppDelegate.swift */,
 				28DAB1141EE7FD9B005BA387 /* ViewController.swift */,
 				28DAB1241EE816C3005BA387 /* LandmarksViewController.swift */,
@@ -63,6 +78,7 @@
 				28DAB1191EE7FD9B005BA387 /* Assets.xcassets */,
 				28DAB11B1EE7FD9B005BA387 /* LaunchScreen.storyboard */,
 				28DAB11E1EE7FD9B005BA387 /* Info.plist */,
+				2892E6D81EE95BA7003CB6C9 /* CoreMLViewController.swift */,
 			);
 			path = "Vision Test";
 			sourceTree = "<group>";
@@ -140,7 +156,9 @@
 			files = (
 				28DAB1151EE7FD9B005BA387 /* ViewController.swift in Sources */,
 				28DAB1131EE7FD9B005BA387 /* AppDelegate.swift in Sources */,
+				2892E6D71EE95B83003CB6C9 /* Resnet50.mlmodel in Sources */,
 				28DAB1251EE816C3005BA387 /* LandmarksViewController.swift in Sources */,
+				2892E6D91EE95BA7003CB6C9 /* CoreMLViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +334,7 @@
 				28DAB1231EE7FD9B005BA387 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

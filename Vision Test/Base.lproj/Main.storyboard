@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7n4-uw-hwo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bXt-GC-ywe">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -74,11 +75,56 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X0A-gH-Ysp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="814.54272863568224"/>
+            <point key="canvasLocation" x="137" y="795"/>
+        </scene>
+        <!--CoreML View Controller-->
+        <scene sceneID="N7w-rf-YFd">
+            <objects>
+                <viewController id="bXt-GC-ywe" customClass="CoreMLViewController" customModule="Vision_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HX0-tf-bjC"/>
+                        <viewControllerLayoutGuide type="bottom" id="R4o-cP-p8l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l4q-db-Lxy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotdog" translatesAutoresizingMaskIntoConstraints="NO" id="xkp-LH-F2o">
+                                <rect key="frame" x="16" y="217" width="343" height="232"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="232" id="f3e-aU-a7b"/>
+                                    <constraint firstAttribute="width" constant="343" id="rTj-l9-KyF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C22-Sn-W6G">
+                                <rect key="frame" x="16" y="482" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C22-Sn-W6G" firstAttribute="leading" secondItem="l4q-db-Lxy" secondAttribute="leadingMargin" id="3yg-Yl-diy"/>
+                            <constraint firstItem="xkp-LH-F2o" firstAttribute="centerY" secondItem="l4q-db-Lxy" secondAttribute="centerY" id="LQB-Wb-db7"/>
+                            <constraint firstItem="xkp-LH-F2o" firstAttribute="centerX" secondItem="l4q-db-Lxy" secondAttribute="centerX" id="RrX-vf-ws3"/>
+                            <constraint firstItem="C22-Sn-W6G" firstAttribute="trailing" secondItem="l4q-db-Lxy" secondAttribute="trailingMargin" id="hzR-rr-gob"/>
+                            <constraint firstItem="C22-Sn-W6G" firstAttribute="top" secondItem="xkp-LH-F2o" secondAttribute="bottom" constant="33" id="ipa-Ba-qHt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="xkp-LH-F2o" id="sjP-ZI-uWP"/>
+                        <outlet property="label" destination="C22-Sn-W6G" id="3NU-nI-Jb6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EJr-Ii-m5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="901.60000000000002" y="794.75262368815595"/>
         </scene>
     </scenes>
     <resources>
         <image name="People" width="1000" height="500"/>
         <image name="People 2" width="1358" height="905"/>
+        <image name="hotdog" width="137" height="91"/>
     </resources>
 </document>
